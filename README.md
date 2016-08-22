@@ -1,5 +1,8 @@
 # coder-index
 TWT coder index FE
 
-''npm i'' 
-''gulp''
+----
+For watch and minify less to css:
+
+    $ npm i
+    $ gulp
