@@ -430,7 +430,7 @@ header:after{
     height: 662px;
     left: 470px;
     top:90px;
-    z-index:9;
+    z-index:19;
 
     .flexslider2{
       float: left;
@@ -442,11 +442,15 @@ header:after{
       z-index:1;
       .flex-control-nav{
         bottom:-90px;
-        z-index: 10;
+        z-index: 200;
         li{
           a{
-            background: #070707;
+            background: #888;
             cursor: pointer;
+            border:none;
+          }
+          .flex-active{
+            background: #333;
           }
         }
       }
