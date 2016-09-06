@@ -21,6 +21,7 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  text-decoration: none;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -322,7 +323,11 @@ html[xmlns] .flexslider .slides {
 
 
 /*devlopment being started*/
-a{
+body{
+  overflow-x: hidden;
+}
+
+a,h2,span,a,p{
   font-family: "Microsoft YaHei";
 }
 header{
@@ -377,7 +382,8 @@ header:after{
   background: url('../images/shadow.png') 0 -50px no-repeat;
 }
 
-section{
+
+.flexslider{
   width: 100%;
   background: #fafafa!important;
   border-top: 1px solid #e2e2e2!important;
@@ -391,7 +397,250 @@ section{
       img{
         width: 100%;
         float: left;
-        margin-top: 18px;
+        margin-top: 8px;
+      }
+    }
+  }
+}
+
+.content{
+  width: 1000px;
+  margin: 0 auto;
+  height: 608px;
+  position: relative;
+  overflow: hidden;
+
+  .icon{
+    margin: 90px 0 0 120px;
+    float: left;
+  }
+  .glass{
+    background: url("../images/glass.png") no-repeat;
+    position: relative;
+    width: 623px;
+    height: 662px;
+    left: 470px;
+    top:-590px;
+    z-index:9;
+  }
+
+  .content-right{
+    position: relative;
+    width: 623px;
+    height: 662px;
+    left: 470px;
+    top:90px;
+    z-index:9;
+
+    .flexslider2{
+      float: left;
+      width: 392px;
+      position: relative;
+      top:-558px;
+      border-radius: 40px;
+      left:38px;
+      z-index:1;
+      .flex-control-nav{
+        bottom:-90px;
+        z-index: 10;
+        li{
+          a{
+            background: #070707;
+            cursor: pointer;
+          }
+        }
+      }
+      .slides{
+        li{
+          img{
+
+          }
+        }
+      }
+    }
+  }
+}
+
+.dynamic-content{
+  height: 76px;
+  width: 100%;
+  background: #fafafa;
+  border-bottom: 1px solid #e2e2e2;
+  border-top: 1px solid #e2e2e2;
+
+  .dynamic-icon{
+    width: 1000px;
+    margin: 12px auto 0;
+  }
+}
+
+.dynamic-body{
+  height: 400px;
+  width: 1030px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding-top: 24px;
+
+  .block{
+    float: left;
+    width: 322px;
+    margin-right: 20px;
+    height: 350px;
+    position: relative;
+    display: block;
+    background: url("../images/bk.png") no-repeat;
+    img{
+      width: 320px;
+      display: inline-block;
+      margin: 0 auto;
+    }
+    h2{
+      color:#333;
+      font-size: 16px;
+      margin-left: 18px;
+      margin-right: 18px;
+      margin-top: 17px;
+      font-weight: bold;
+      line-height: 130%;
+    }
+    p{
+      color:#777;
+      font-size: 14px;
+      margin-left: 18px;
+      margin-right: 18px;
+      margin-top: 12px;
+      line-height: 130%;
+    }
+
+    span,a{
+      color:#777;
+      font-size: 14px;
+    }
+
+    .a-tag{
+      position: absolute;
+      bottom: 20px;
+      cursor: pointer;
+      float: left;
+
+      i{
+        background: url("../images/dynamic-left-bar.png") no-repeat;
+        width: 3px;
+        height: 14px;
+        float: left;
+        margin-right: 6px;
+      }
+    }
+
+    span{
+      position: absolute;
+      bottom:20px;
+      right: 18px;
+    }
+
+  }
+}
+
+.block-hover{
+  background: url("../images/bk.png") no-repeat ;
+}
+
+footer{
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  background: #131313;
+  padding-top: 50px;
+  h2{
+    color:#f4f1f1;
+    font-size: 18px;
+    a{
+      text-decoration: #f4f1f1;
+      color:#f4f1f1;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  }
+
+  p{
+    margin-top: 40px;
+    color:#f4f1f1;
+    font-size: 14px;
+  }
+}
+
+.map{
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  height: 467px;
+
+  #container{
+    width: 661px;
+    height: 401px;
+    float: left;
+    margin-top: 20px;
+  }
+
+  .right-bar{
+    width: 322px;
+    float: right;
+    margin-left: 20px;
+    height: 401px;
+    margin-top: 20px;
+
+    h2{
+      height: 116px;
+      background: #808082;
+      position: relative;
+
+      i{
+        background: url("../images/mail-icon.png") no-repeat;
+        width: 46px;
+        height: 32px;
+        display: inline-block;
+        position: absolute;
+        top: 42px;
+        left:27px;
+      }
+
+      span{
+        color:#fffefe;
+        font-size: 16px;
+        position: absolute;
+        top:50px;
+        right:27px;
+      }
+    }
+    p{
+      height: 285px;
+      position: relative;
+      background: #99999b;
+      font-weight: normal;
+
+      i{
+        background: url("../images/location-icon.png") no-repeat;
+        width: 37px;
+        height: 55px;
+        display: inline-block;
+        position: absolute;
+        left:27px;
+        top:36px;
+      }
+
+      span{
+        position: absolute;
+        color:#fffefe;
+        font-size: 15px;
+        right:27px;
+        top:56px;
+        width:206px;
+        line-height: 140%;
+      }
+
+      span:last-child{
+        top:100px;
+        text-indent: 4px;
       }
     }
   }

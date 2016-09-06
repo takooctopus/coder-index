@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css"/>
     <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
@@ -33,9 +34,98 @@
 </section>
 
 
+<div class="content">
+    <img src="images/icon.png" width="315" height="487" class="icon">
+    <div class="content-right">
+        <div class="flexslider2">
+            <ul class="slides">
+                <li><img src="images/2-0.png"></li>
+                <li><img src="images/2-1.png"></li>
+                <li><img src="images/2-2.png"></li>
+                <li><img src="images/2-3.png"></li>
+                <li><img src="images/2-4.png"></li>
+            </ul>
+        </div>
+    </div>
+    <div class="glass"></div>
+
+</div>
+
+<div class="dynamic-content">
+    <div class="dynamic-icon">
+        <img src="images/dynamic-icon.png">
+    </div>
+</div>
+
+<div class="dynamic-body">
+
+    <a class="block" target="_blank" href="">
+        <img src="images/demo.png">
+        <h2>唇枪舌剑 是非谁辩：天津大学新生
+            辩论赛决赛成功举行</h2>
+        <p>你是否想象过自己在众人之前妙语连珠，引得
+            掌声阵阵？你是否想象</p>
+        <p class="a-tag"><i></i>最新动态</p>
+        <span>16/7/18</span>
+    </a>
+
+    <a class="block" target="_blank" href="">
+        <img src="images/demo.png">
+        <h2>唇枪舌剑 是非谁辩：天津大学新生
+            辩论赛决赛成功举行</h2>
+        <p>你是否想象过自己在众人之前妙语连珠，引得
+            掌声阵阵？你是否想象</p>
+        <p class="a-tag"><i></i>最新动态</p>
+        <span>16/7/18</span>
+    </a>
+
+    <a class="block" target="_blank" href="">
+        <img src="images/demo.png">
+        <h2>唇枪舌剑 是非谁辩：天津大学新生
+            辩论赛决赛成功举行</h2>
+        <p>你是否想象过自己在众人之前妙语连珠，引得
+            掌声阵阵？你是否想象</p>
+        <p class="a-tag"><i></i>最新动态</p>
+        <span>16/7/18</span>
+    </a>
+
+    <div class="more"></div>
+</div>
+
+<div class="dynamic-content">
+    <div class="dynamic-icon">
+        <img src="images/contact-icon.png">
+    </div>
+</div>
+
+<div class="map">
+    <div id="container"></div>
+    <div class="right-bar">
+        <h2><i></i><span>admin.twtstudio@163.com</span></h2>
+        <p><i></i><span>北洋园校区大通学生中心C区301室</span>
+            <span>卫津路校区鹏翔学生公寓四斋118室</span></p>
+    </div>
+</div>
+
+<footer>
+    <h2><a>http://www.twt.edu.cn</a> 天外天首页</h2>
+    <p>天外天工作室 ©2000-2016 津ICP备000017号</p>
+</footer>
 
 <script src="js/lib/jquery-3.1.0.js"></script>
 <script src="js/lib/jquery.flexslider-min.js"></script>
+<script src="http://webapi.amap.com/maps?v=1.3&key=714474c889cf66022a9d94129d6c2415&callback=init"></script>
+<script>
+    function init(){
+        var map = new AMap.Map('container', {
+            center: [117.310664, 38.997559],
+            zoom: 16
+        });
+        map.plugin(["AMap.ToolBar"], function() {
+            map.addControl(new AMap.ToolBar());
+        });
+    }
+</script>
 <script src="js/index.js"></script>
 </body>
 </html>
