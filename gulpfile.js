@@ -6,14 +6,14 @@ var gulp = require('gulp'),
     cssmin = require('gulp-minify-css');
 
 gulp.task('less', function () {
-    gulp.src(['less/*.less'])
+    gulp.src(['src/less/*.less'])
         .pipe(less())
         .pipe(cssmin())
-        .pipe(gulp.dest('css'));
+        .pipe(gulp.dest('dist/css'));
 });
 
 gulp.task('lessWatch', function () {
-    gulp.watch('less/*.less', ['less']); //当所有less文件发生改变时，调用less任务
+    gulp.watch('src/less/*.less', ['less']); //当所有less文件发生改变时，调用less任务
 });
 
 
